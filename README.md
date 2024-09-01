@@ -92,21 +92,22 @@ Repo:
 GitHub repository: alx-files_manager
 File: utils/redis.js
 
-1. MongoDB utils
-mandatory
-Inside the folder utils, create a file db.js that contains the class DBClient.
+### 1. MongoDB utils
 
-DBClient should have:
+Inside the folder `utils`, create a file `db.js` that contains the class `DBClient`.
 
-the constructor that creates a client to MongoDB:
-host: from the environment variable DB_HOST or default: localhost
-port: from the environment variable DB_PORT or default: 27017
-database: from the environment variable DB_DATABASE or default: files_manager
-a function isAlive that returns true when the connection to MongoDB is a success otherwise, false
-an asynchronous function nbUsers that returns the number of documents in the collection users
-an asynchronous function nbFiles that returns the number of documents in the collection files
-After the class definition, create and export an instance of DBClient called dbClient.
+`DBClient` should have:
 
+- the constructor that creates a client to MongoDB:
+- host: from the environment variable `DB_HOST` or default: `localhost`
+- port: from the environment variable `DB_PORT` or default: `27017`
+- database: from the environment variable `DB_DATABASE` or default: `files_manager`
+- a function isAlive that returns true when the connection to MongoDB is a success otherwise, false
+- an asynchronous function nbUsers that returns the number of documents in the collection users
+- an asynchronous function nbFiles that returns the number of documents in the collection files
+- After the class definition, create and export an instance of DBClient called dbClient.
+
+```bash
 bob@dylan:~$ cat main.js
 import dbClient from './utils/db';
 
@@ -145,10 +146,11 @@ true
 4
 30
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-files_manager
-File: utils/db.js
+File: `utils/db.js`
 
 ### 2. First API
 
