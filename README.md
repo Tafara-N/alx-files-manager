@@ -303,14 +303,16 @@ The relative path of this folder is given by the environment variable FOLDER_PAT
 If this variable is not present or empty, use /tmp/files_manager as storing folder path
 Create a local path in the storing folder with filename a UUID
 Store the file in clear (reminder: data contains the Base64 of the file) in this local path
-Add the new file document in the collection files with these attributes:
+    - Add the new file document in the collection `files` with these attributes:
 userId: ID of the owner document (owner from the authentication)
 name: same as the value received
 type: same as the value received
 isPublic: same as the value received
 parentId: same as the value received - if not present: 0
 localPath: for a type=file|image, the absolute path to the file save in local
-Return the new file with a status code 201
+    - Return the new file with a status code 201
+
+```bash
 bob@dylan:~$ curl 0.0.0.0:5000/connect -H "Authorization: Basic Ym9iQGR5bGFuLmNvbTp0b3RvMTIzNCE=" ; echo ""
 {"token":"f21fb953-16f9-46ed-8d9c-84c6450ec80f"}
 bob@dylan:~$
@@ -356,8 +358,9 @@ bob@dylan:~$
 bob@dylan:~$ ls /tmp/files_manager/
 2a1f4fc3-687b-491a-a3d2-5808a02942c9   51997b88-5c42-42c2-901e-e7f4e71bdc47
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-files_manager
 File: `utils/, routes/index.js, controllers/FilesController.js`
 
