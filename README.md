@@ -27,7 +27,7 @@ Enjoy!
 - [MongoDB](https://github.com/mongodb/node-mongodb-native)
 - [Bull](https://github.com/OptimalBits/bull)
 - [Image thumbnail](https://www.npmjs.com/package/image-thumbnail)
-- [Mime-Types]()
+- [Mime-Types](https://www.npmjs.com/package/mime-types)
 - [Redis]()
 
 # Learning Objectives
