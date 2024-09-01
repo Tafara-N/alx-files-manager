@@ -25,7 +25,7 @@ Enjoy!
 - [Mocha documentation](https://mochajs.org/)
 - [Nodemon documentation](https://github.com/remy/nodemon#nodemon)
 - [MongoDB](https://github.com/mongodb/node-mongodb-native)
-- [Bull]()
+- [Bull](https://github.com/OptimalBits/bull)
 - [Image thumbnail]()
 - [Mime-Types]()
 - [Redis]()
