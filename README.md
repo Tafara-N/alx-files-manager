@@ -244,18 +244,21 @@ Now, we have a way to identify a user, create a token (= avoid to store the pass
 
 Every authenticated endpoints of our API will look at this token inside the header X-Token.
 
-GET /disconnect should sign-out the user based on the token:
+`GET /disconnect` should sign-out the user based on the token:
 
-Retrieve the user based on the token:
-If not found, return an error Unauthorized with a status code 401
-Otherwise, delete the token in Redis and return nothing with a status code 204
-Inside the file controllers/UsersController.js add a new endpoint:
+- Retrieve the user based on the token:
+    - If not found, return an error `Unauthorized` with a status code 401
+    - Otherwise, delete the token in Redis and return nothing with a status code 204
 
-GET /users/me should retrieve the user base on the token used:
+Inside the file `controllers/UsersController.js` add a new endpoint:
 
-Retrieve the user based on the token:
-If not found, return an error Unauthorized with a status code 401
-Otherwise, return the user object (email and id only)
+`GET /users/me` should retrieve the user base on the token used:
+
+- Retrieve the user based on the token:
+    - If not found, return an error `Unauthorized` with a status code 401
+    - Otherwise, return the user object (`email` and `id` only)
+
+```bash
 bob@dylan:~$ curl 0.0.0.0:5000/connect -H "Authorization: Basic Ym9iQGR5bGFuLmNvbTp0b3RvMTIzNCE=" ; echo ""
 {"token":"031bffac-3edc-4e51-aaae-1c121317da8a"}
 bob@dylan:~$
@@ -267,10 +270,11 @@ bob@dylan:~$ curl 0.0.0.0:5000/disconnect -H "X-Token: 031bffac-3edc-4e51-aaae-1
 bob@dylan:~$ curl 0.0.0.0:5000/users/me -H "X-Token: 031bffac-3edc-4e51-aaae-1c121317da8a" ; echo ""
 {"error":"Unauthorized"}
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-files_manager
-File: utils/, routes/index.js, controllers/UsersController.js, controllers/AuthController.js
+File: `utils/, routes/index.js, controllers/UsersController.js, controllers/AuthController.js`
 
 ### 5. First file
 
