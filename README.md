@@ -19,16 +19,16 @@ Enjoy!
 
 **Read or watch:**
 
-Node JS getting started
-Process API doc
-Express getting started
-Mocha documentation
-Nodemon documentation
-MongoDB
-Bull
-Image thumbnail
-Mime-Types
-Redis
+- [Node JS getting started]()
+- [Process API doc]()
+- [Express getting started]()
+- [Mocha documentation]()
+- [Nodemon documentation]()
+- [MongoDB]()
+- [Bull]()
+- [Image thumbnail]()
+- [Mime-Types]()
+- [Redis]()
 
 # Learning Objectives
 At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), **without the help of Google:**
