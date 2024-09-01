@@ -28,7 +28,7 @@ Enjoy!
 - [Bull](https://github.com/OptimalBits/bull)
 - [Image thumbnail](https://www.npmjs.com/package/image-thumbnail)
 - [Mime-Types](https://www.npmjs.com/package/mime-types)
-- [Redis]()
+- [Redis](https://github.com/redis/node-redis)
 
 # Learning Objectives
 At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), **without the help of Google:**
