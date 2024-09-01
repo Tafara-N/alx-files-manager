@@ -289,9 +289,9 @@ Inside controllers, add a file FilesController.js that contains the new endpoint
     - `parentId`: (optional) as ID of the parent (default: 0 -> the root)
     - `isPublic`: (optional) as boolean to define if the file is public or not (default: false)
     - `data`: (only for `type=file|image`) as Base64 of the file content
-- If the name is missing, return an error Missing name with a status code 400
-- If the type is missing or not part of the list of accepted type, return an error Missing type with a status code 400
-- If the data is missing and type != folder, return an error Missing data with a status code 400
+- If the `name` is missing, return an error `Missing name` with a status code 400
+- If the `type` is missing or not part of the list of accepted type, return an error `Missing type` with a status code 400
+- If the `data` is missing and `type != folder`, return an error `Missing data` with a status code 400
 - If the parentId is set:
 - If no file is present in DB for this parentId, return an error Parent not found with a status code 400
 - If the file present in DB for this parentId is not of type folder, return an error Parent is not a folder with a status code 400
