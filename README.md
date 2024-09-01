@@ -55,18 +55,20 @@ Don’t forget to run $ npm install when you have the package.json
 Tasks
 0. Redis utils
 mandatory
-Inside the folder utils, create a file redis.js that contains the class RedisClient.
+Inside the folder utils, create a file redis.js that contains the class `RedisClient`.
 
-RedisClient should have:
+`RedisClient` should have:
 
-the constructor that creates a client to Redis:
-any error of the redis client must be displayed in the console (you should use on('error') of the redis client)
-a function isAlive that returns true when the connection to Redis is a success otherwise, false
-an asynchronous function get that takes a string key as argument and returns the Redis value stored for this key
-an asynchronous function set that takes a string key, a value and a duration in second as arguments to store it in Redis (with an expiration set by the duration argument)
-an asynchronous function del that takes a string key as argument and remove the value in Redis for this key
-After the class definition, create and export an instance of RedisClient called redisClient.
+- the constructor that creates a client to Redis:
+    - any error of the redis client must be displayed in the console (you should use `on('error')` of the redis client)
+- a function `isAlive` that returns `true` when the connection to Redis is a success otherwise, `false`
+- an asynchronous function `get` that takes a string key as argument and returns the Redis value stored for this key
+- an asynchronous function `set` that takes a string key, a value and a duration in second as arguments to store it in Redis (with an expiration set by the duration argument)
+- an asynchronous function `del` that takes a string key as argument and remove the value in Redis for this key
 
+After the class definition, create and export an instance of `RedisClient` called `redisClient`.
+
+```bash
 bob@dylan:~$ cat main.js
 import redisClient from './utils/redis';
 
@@ -87,10 +89,11 @@ null
 12
 null
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-files_manager
-File: utils/redis.js
+File: `utils/redis.js`
 
 ### 1. MongoDB utils
 
