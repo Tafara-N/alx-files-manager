@@ -166,23 +166,29 @@ GET /status should return if Redis is alive and if the DB is alive too by using 
 GET /stats should return the number of users and files in DB: { "users": 12, "files": 1231 } with a status code 200
 users collection must be used for counting all users
 files collection must be used for counting all files
-Terminal 1:
 
+**Terminal 1:**
+
+```bash
 bob@dylan:~$ npm run start-server
 Server running on port 5000
 ...
-Terminal 2:
+```
 
+**Terminal 2:**
+
+```bash
 bob@dylan:~$ curl 0.0.0.0:5000/status ; echo ""
 {"redis":true,"db":true}
 bob@dylan:~$
 bob@dylan:~$ curl 0.0.0.0:5000/stats ; echo ""
 {"users":4,"files":30}
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-files_manager
-File: server.js, routes/index.js, controllers/AppController.js
+File: `server.js, routes/index.js, controllers/AppController.js`
 
 ### 3. Create a new user
 
