@@ -272,12 +272,13 @@ Repo:
 GitHub repository: alx-files_manager
 File: utils/, routes/index.js, controllers/UsersController.js, controllers/AuthController.js
 
-5. First file
-mandatory
-In the file routes/index.js, add a new endpoint:
+### 5. First file
 
-POST /files => FilesController.postUpload
-Inside controllers, add a file FilesController.js that contains the new endpoint:
+In the file `routes/index.js`, add a new endpoint:
+
+- `POST /files` => `FilesController.postUpload`
+
+Inside `controllers`, add a file `FilesController.js` that contains the new endpoint:
 
 `POST /files` should create a new file in DB and in disk:
 
