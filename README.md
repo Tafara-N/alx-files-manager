@@ -222,9 +222,9 @@ Repo:
 GitHub repository: alx-files_manager
 File: utils/, routes/index.js, controllers/UsersController.js
 
-4. Authenticate a user
-mandatory
-In the file routes/index.js, add 3 new endpoints:
+### 4. Authenticate a user
+
+In the file `routes/index.js`, add 3 new endpoints:
 
 - `GET /connect` => `AuthController.getConnect`
 - `GET /disconnect` => `AuthController.getDisconnect`
