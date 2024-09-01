@@ -420,14 +420,17 @@ If no file document is linked to the user and the ID passed as parameter, return
 Otherwise:
 Update the value of isPublic to true
 And return the file document with a status code 200
-PUT /files/:id/unpublish should set isPublic to false on the file document based on the ID:
 
-Retrieve the user based on the token:
-If not found, return an error Unauthorized with a status code 401
-If no file document is linked to the user and the ID passed as parameter, return an error Not found with a status code 404
-Otherwise:
-Update the value of isPublic to false
-And return the file document with a status code 200
+`PUT /files/:id/unpublish` should set `isPublic` to `false` on the file document based on the ID:
+
+- Retrieve the user based on the token:
+    - If not found, return an error `Unauthorized` with a status code 401
+- If no file document is linked to the user and the ID passed as parameter, return an error `Not found` with a status code 404
+- Otherwise:
+    - Update the value of `isPublic` to `false`
+    - And return the file document with a status code 200
+
+```bash
 bob@dylan:~$ curl 0.0.0.0:5000/connect -H "Authorization: Basic Ym9iQGR5bGFuLmNvbTp0b3RvMTIzNCE=" ; echo ""
 {"token":"f21fb953-16f9-46ed-8d9c-84c6450ec80f"}
 bob@dylan:~$
@@ -440,10 +443,11 @@ bob@dylan:~$
 bob@dylan:~$ curl -XPUT 0.0.0.0:5000/files/5f1e8896c7ba06511e683b25/unpublish -H "X-Token: f21fb953-16f9-46ed-8d9c-84c6450ec80f" ; echo ""
 {"id":"5f1e8896c7ba06511e683b25","userId":"5f1e7cda04a394508232559d","name":"image.png","type":"image","isPublic":false,"parentId":"5f1e881cc7ba06511e683b23"}
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-files_manager
-File: utils/, routes/index.js, controllers/FilesController.js
+File: `utils/, routes/index.js, controllers/FilesController.js`
 
 ### 8. File data
 
