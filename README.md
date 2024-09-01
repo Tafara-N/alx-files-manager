@@ -485,31 +485,38 @@ Repo:
 GitHub repository: alx-files_manager
 File: utils/, routes/index.js, controllers/FilesController.js
 
-9. Image Thumbnails
-mandatory
-Update the endpoint POST /files endpoint to start a background processing for generating thumbnails for a file of type image:
+### 9. Image Thumbnails
 
-Create a Bull queue fileQueue
-When a new image is stored (in local and in DB), add a job to this queue with the userId and fileId
-Create a file worker.js:
+Update the endpoint `POST /files` endpoint to start a background processing for generating thumbnails for a file of type `image`:
 
-By using the module Bull, create a queue fileQueue
-Process this queue:
-If fileId is not present in the job, raise an error Missing fileId
-If userId is not present in the job, raise an error Missing userId
-If no document is found in DB based on the fileId and userId, raise an error File not found
-By using the module image-thumbnail, generate 3 thumbnails with width = 500, 250 and 100 - store each result on the same location of the original file by appending _<width size>
-Update the endpoint GET /files/:id/data to accept a query parameter size:
+- Create a `Bull` queue `fileQueue`
+- When a new image is stored (in local and in DB), add a job to this queue with the `userId` and `fileId`
 
-size can be 500, 250 or 100
-Based on size, return the correct local file
-If the local file doesn’t exist, return an error Not found with a status code 404
-Terminal 3: (start the worker)
+- Create a file `worker.js`:
 
+- By using the module `Bull`, create a queue `fileQueue`
+- Process this queue:
+    - If `fileId` is not present in the job, raise an error `Missing fileId`
+    - If `userId` is not present in the job, raise an error `Missing userId`
+    - If no document is found in DB based on the `fileId` and `userId`, raise an error `File not found`
+    - By using the module `image-thumbnail`, generate 3 thumbnails with `width` = 500, 250 and 100 - store each result on the same location of the original file by appending `_<width size>`
+
+Update the endpoint `GET /files/:id/data` to accept a query parameter `size`:
+
+- `size` can be `500`, `250` or `100`
+- Based on `size`, return the correct local file
+- If the local file doesn’t exist, return an error `Not found` with a status code 404
+
+**Terminal 3:** (start the worker)
+
+```bash
 bob@dylan:~$ npm run start-worker
 ...
-Terminal 2:
+```
 
+**Terminal 2:**
+
+```bash
 bob@dylan:~$ curl 0.0.0.0:5000/connect -H "Authorization: Basic Ym9iQGR5bGFuLmNvbTp0b3RvMTIzNCE=" ; echo ""
 {"token":"f21fb953-16f9-46ed-8d9c-84c6450ec80f"}
 bob@dylan:~$
@@ -527,10 +534,11 @@ bob@dylan:~$
 bob@dylan:~$ curl -XGET 0.0.0.0:5000/files/5f1e8896c7ba06511e683b25/data?size=250 -so new_image.png ; file new_image.png
 new_image.png: PNG image data, 250 x 272, 8-bit/color RGBA, non-interlaced
 bob@dylan:~$
-Repo:
+```
 
+Repo:
 GitHub repository: alx-files_manager
-File: utils/, controllers/FilesController.js, worker.js
+File: `utils/, controllers/FilesController.js, worker.js`
 
 ### 10. Tests!
 
