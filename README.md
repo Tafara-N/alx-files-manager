@@ -445,11 +445,11 @@ Repo:
 GitHub repository: alx-files_manager
 File: utils/, routes/index.js, controllers/FilesController.js
 
-8. File data
-mandatory
-In the file routes/index.js, add one new endpoint:
+### 8. File data
 
-GET /files/:id/data => FilesController.getFile
+In the file `routes/index.js`, add one new endpoint:
+
+- `GET /files/:id/data` => `FilesController.getFile`
 
 In the file `controllers/FilesController.js`, add the new endpoint:
 
