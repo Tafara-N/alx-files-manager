@@ -282,13 +282,13 @@ Inside controllers, add a file FilesController.js that contains the new endpoint
 `POST /files` should create a new file in DB and in disk:
 
 - Retrieve the user based on the token:
-- If not found, return an error Unauthorized with a status code 401
+    - If not found, return an error `Unauthorized` with a status code 401
 - To create a file, you must specify:
-- name: as filename
-- type: either folder, file or image
-- parentId: (optional) as ID of the parent (default: 0 -> the root)
-- isPublic: (optional) as boolean to define if the file is public or not (default: false)
-- data: (only for type=file|image) as Base64 of the file content
+    - `name`: as filename
+    - `type`: either `folder`, `file` or `image`
+    - `parentId`: (optional) as ID of the parent (default: 0 -> the root)
+    - `isPublic`: (optional) as boolean to define if the file is public or not (default: false)
+    - `data`: (only for `type=file|image`) as Base64 of the file content
 - If the name is missing, return an error Missing name with a status code 400
 - If the type is missing or not part of the list of accepted type, return an error Missing type with a status code 400
 - If the data is missing and type != folder, return an error Missing data with a status code 400
