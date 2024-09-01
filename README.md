@@ -184,13 +184,13 @@ Repo:
 GitHub repository: alx-files_manager
 File: server.js, routes/index.js, controllers/AppController.js
 
-3. Create a new user
-mandatory
+### 3. Create a new user
+
 Now that we have a simple API, it’s time to add users to our database.
 
-In the file routes/index.js, add a new endpoint:
+In the file `routes/index.js`, add a new endpoint:
 
-`POST /users` => `UsersController.postNew`
+- `POST /users` => `UsersController.postNew`
 
 Inside `controllers`, add a file `UsersController.js` that contains the new endpoint:
 
