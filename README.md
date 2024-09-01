@@ -26,7 +26,7 @@ Enjoy!
 - [Nodemon documentation](https://github.com/remy/nodemon#nodemon)
 - [MongoDB](https://github.com/mongodb/node-mongodb-native)
 - [Bull](https://github.com/OptimalBits/bull)
-- [Image thumbnail]()
+- [Image thumbnail](https://www.npmjs.com/package/image-thumbnail)
 - [Mime-Types]()
 - [Redis]()
 
