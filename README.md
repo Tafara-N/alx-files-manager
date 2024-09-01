@@ -404,22 +404,23 @@ Repo:
 GitHub repository: alx-files_manager
 File: utils/, routes/index.js, controllers/FilesController.js
 
-7. File publish/unpublish
-mandatory
-In the file routes/index.js, add 2 new endpoints:
+### 7. File publish/unpublish
 
-PUT /files/:id/publish => FilesController.putPublish
-PUT /files/:id/publish => FilesController.putUnpublish
-In the file controllers/FilesController.js, add the 2 new endpoints:
+In the file `routes/index.js`, add 2 new endpoints:
 
-PUT /files/:id/publish should set isPublic to true on the file document based on the ID:
+- `PUT /files/:id/publish` => `FilesController.putPublish`
+- `PUT /files/:id/publish` => `FilesController.putUnpublish`
 
-Retrieve the user based on the token:
-If not found, return an error Unauthorized with a status code 401
-If no file document is linked to the user and the ID passed as parameter, return an error Not found with a status code 404
-Otherwise:
-Update the value of isPublic to true
-And return the file document with a status code 200
+In the file `controllers/FilesController.js`, add the 2 new endpoints:
+
+`PUT /files/:id/publish` should set `isPublic` to `true` on the file document based on the ID:
+
+- Retrieve the user based on the token:
+    - If not found, return an error `Unauthorized` with a status code 401
+- If no file document is linked to the user and the ID passed as parameter, return an error `Not found` with a status code 404
+- Otherwise:
+    - Update the value of `isPublic` to `true`
+    - And return the file document with a status code 200
 
 `PUT /files/:id/unpublish` should set `isPublic` to `false` on the file document based on the ID:
 
