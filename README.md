@@ -52,10 +52,11 @@ Click to show/hide file contents
 and…
 Don’t forget to run $ npm install when you have the package.json
 
-Tasks
-0. Redis utils
-mandatory
-Inside the folder utils, create a file redis.js that contains the class `RedisClient`.
+## Tasks
+
+### 0. Redis utils
+
+Inside the folder `utils`, create a file `redis.js` that contains the class `RedisClient`.
 
 `RedisClient` should have:
 
