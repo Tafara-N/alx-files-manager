@@ -205,7 +205,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/redis.js`
+- File: `utils/redis.js`
 
 ### 1. MongoDB utils
 
@@ -266,7 +266,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/db.js`
+- File: `utils/db.js`
 
 ### 2. First API
 
@@ -308,7 +308,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `server.js, routes/index.js, controllers/AppController.js`
+- File: `server.js, routes/index.js, controllers/AppController.js`
 
 ### 3. Create a new user
 
@@ -350,7 +350,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/, routes/index.js, controllers/UsersController.js`
+- File: `utils/, routes/index.js, controllers/UsersController.js`
 
 ### 4. Authenticate a user
 
@@ -406,7 +406,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/, routes/index.js, controllers/UsersController.js, controllers/AuthController.js`
+- File: `utils/, routes/index.js, controllers/UsersController.js, controllers/AuthController.js`
 
 ### 5. First file
 
@@ -499,7 +499,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/, routes/index.js, controllers/FilesController.js`
+- File: `utils/, routes/index.js, controllers/FilesController.js`
 
 ### 6. Get and list file
 
@@ -547,7 +547,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/, routes/index.js, controllers/FilesController.js`
+- File: `utils/, routes/index.js, controllers/FilesController.js`
 
 ### 7. File publish/unpublish
 
@@ -593,7 +593,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/, routes/index.js, controllers/FilesController.js`
+- File: `utils/, routes/index.js, controllers/FilesController.js`
 
 ### 8. File data
 
@@ -637,7 +637,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/, routes/index.js, controllers/FilesController.js`
+- File: `utils/, routes/index.js, controllers/FilesController.js`
 
 ### 9. Image Thumbnails
 
@@ -692,7 +692,7 @@ bob@dylan:~$
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/, controllers/FilesController.js, worker.js`
+- File: `utils/, controllers/FilesController.js, worker.js`
 
 ### 10. Tests!
 
@@ -718,7 +718,7 @@ Create tests for each endpoints:
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `tests/`
+- File: `tests/`
 
 ### 11. New user - welcome email
 
@@ -739,4 +739,4 @@ In real life, you can use a third party service like [Mailgun](https://www.mailg
 
 **Repo:**
 - GitHub repository: `alx-files_manager`
-File: `utils/, worker.js, controllers/UsersController.js`
+- File: `utils/, worker.js, controllers/UsersController.js`
