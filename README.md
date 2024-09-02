@@ -203,7 +203,7 @@ null
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/redis.js`
 
@@ -264,7 +264,7 @@ true
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/db.js`
 
@@ -306,7 +306,7 @@ bob@dylan:~$ curl 0.0.0.0:5000/stats ; echo ""
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `server.js, routes/index.js, controllers/AppController.js`
 
@@ -348,7 +348,7 @@ bob@dylan:~$ curl 0.0.0.0:5000/users -XPOST -H "Content-Type: application/json" 
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/, routes/index.js, controllers/UsersController.js`
 
@@ -404,7 +404,7 @@ bob@dylan:~$ curl 0.0.0.0:5000/users/me -H "X-Token: 031bffac-3edc-4e51-aaae-1c1
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/, routes/index.js, controllers/UsersController.js, controllers/AuthController.js`
 
@@ -497,7 +497,7 @@ bob@dylan:~$ ls /tmp/files_manager/
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/, routes/index.js, controllers/FilesController.js`
 
@@ -545,7 +545,7 @@ bob@dylan:~$ curl -XGET 0.0.0.0:5000/files/5f1e8896c7ba06511e683b25 -H "X-Token:
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/, routes/index.js, controllers/FilesController.js`
 
@@ -591,7 +591,7 @@ bob@dylan:~$ curl -XPUT 0.0.0.0:5000/files/5f1e8896c7ba06511e683b25/unpublish -H
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/, routes/index.js, controllers/FilesController.js`
 
@@ -635,7 +635,7 @@ Hello Webstack!
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/, routes/index.js, controllers/FilesController.js`
 
@@ -690,7 +690,7 @@ new_image.png: PNG image data, 250 x 272, 8-bit/color RGBA, non-interlaced
 bob@dylan:~$
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/, controllers/FilesController.js, worker.js`
 
@@ -716,7 +716,7 @@ Create tests for each endpoints:
 - `GET /files/:id/data`
 ```
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `tests/`
 
@@ -737,6 +737,6 @@ Update the file `worker.js`:
 
 In real life, you can use a third party service like [Mailgun](https://www.mailgun.com/) to send real email. These API are slow, (sending via SMTP is worst!) and sending emails via a background job is important to optimize API endpoint.
 
-Repo:
+**Repo:**
 GitHub repository: alx-files_manager
 File: `utils/, worker.js, controllers/UsersController.js`
